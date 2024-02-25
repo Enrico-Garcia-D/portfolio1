@@ -1,0 +1,161 @@
+body, html{
+    height:100%;
+    font-family: "Helvetica", Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.bg-image{
+    position: relative;
+    height: 100vh;
+    background-image: url(images/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.email{
+    position: absolute;
+    right: 30px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.email:hover{
+    background-color: antiquewhite;
+}
+.cv{
+    position: absolute;
+    font-size: larger;
+    padding: 10px 20px;
+    color: #000;
+    background-color: none;
+    top: 20px;
+    border: none;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+
+.cv:hover{
+    overflow: hidden;
+    background: brown;
+    color: yellow;
+}
+.nav-bar{
+    display: flex;
+    position: absolute;
+    top: 0;
+}z
+.container{
+    height: 100vh;
+    position: relative;
+}
+h3{
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+.center-text{
+    position: absolute;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-weight: bolder;
+    font-size: 70px;
+    padding-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+h1:hover{
+    font-size: 50px;
+    color: yellow;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#myworks{
+    font-size: larger;
+    padding: 10px 20px;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: none;
+    border: 1px solid;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+#myworks:hover{
+    color: yellow;
+    transition: 0.2s;
+}
+
+.popup-container{
+    display: none;
+    position: fixed;
+    background-color: antiquewhite;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    border-radius: 3px;
+    top: -40px;
+    animation: fadeIn 0.7s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+
+.popup-container p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.contact{
+    position: relative;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 3px;
+    width: 100%;
+}
+
+.contact a{
+    font-size: 17px;
+    font-weight: 40px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform-origin: top;
+    padding: 10px;
+}
+
+.contact a:not(.email):hover{
+    color: yellow;
+    transform: translateY(-35px);
+    font-size: 20px;
+}
+.icon{
+    width: 30px;
+    vertical-align: middle;
+    padding: 3px;
+}
+
